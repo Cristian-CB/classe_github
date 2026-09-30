@@ -1,26 +1,16 @@
-lista = [9,3,2,5,1]
+import random
 
-
-def ordenar (lista):
+def ordenar_burbuja (lista):
     n = len(lista)
-    print(n)
     for i in range (n):
         for j in range(n-1):
-
             if (lista [j] > lista[j+1]):
                 temporal = lista[j+1]
                 lista[j+1]=lista[j]
                 lista[j]=temporal
-                print("i" , i)
-                print("j" ,j)
-                print("hola")
 
+lista = [random.randint(1,100) for i in range(50)]
 
-
-
-
-
-
-
-ordenar(lista)
+print(lista)
+ordenar_burbuja(lista)
 print(lista)
